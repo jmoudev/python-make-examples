@@ -1,0 +1,13 @@
+[project]
+name = "python-make-pip-example"
+version = "0.1.0"
+description = "Python make example with pip"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "mypy",
+    "ruff",
+]
