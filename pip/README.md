@@ -2,36 +2,16 @@
 
 **make** examples for a Python project utilising pip for packaging.
 
-## dev
+To avoid any file related issues all targets are .PHONY.
 
-Make .PHONY target dev, setting up the project for development:
+## User
 
-```bash
-$ make dev
-python -m venv .venv
-.venv/bin/python -m pip install -e .[dev]
-...
-Successfully installed cfgv-3.4.0 distlib-0.3.9 filelock-3.17.0 ...
-.venv/bin/pre-commit install
-pre-commit installed at .git/hooks/pre-commit
-```
+Rules for make targets to run the Python main.py.
 
-## lint
+## Dev 
 
-Make .PHONY target lint, running the ruff linter:
+Rules to install and run the project as a developer.
 
-```bash
-$ make lint
-.venv/bin/ruff check .
-All checks passed!
-```
+## CI
 
-## type
-
-Make .PHONY target type, running mypy for type checking:
-
-```bash
-$ make type
-.venv/bin/mypy .
-Success: no issues found in 1 source file
-```
+Rules to install dependencies in a docker environment.

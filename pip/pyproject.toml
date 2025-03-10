@@ -6,8 +6,16 @@ requires-python = ">=3.13"
 dependencies = []
 
 [project.optional-dependencies]
+ci = [
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "sphinx",
+    "tox",
+]
 dev = [
     "pre-commit",
-    "mypy",
-    "ruff",
+    "pytest",
+    "pytest-cov",
 ]
