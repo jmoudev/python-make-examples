@@ -36,6 +36,7 @@ lint:
 type:
 	mypy .
 
-.PHONY: docs
 docs:
 	sphinx-build .
+
+.PHONY: venv install run install-dev dev test install-ci test-all lint type docs
