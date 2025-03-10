@@ -1,0 +1,19 @@
+[project]
+name = "python-make-pip-example"
+version = "0.1.0"
+description = "Python make example with uv"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.1.0",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
