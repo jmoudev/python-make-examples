@@ -1,7 +1,7 @@
 .PHONY: foo
 foo:
-	@python3 -c "print('foo')"
+	@echo foo
 
 .PHONY: bar
 bar: foo
-	@python3 -c "print('bar')"
+	@echo bar
